@@ -1,13 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Steam Vibe</title>
-</head>
-<body>
-      
-      
+      <title>Stream Vibe</title>
+      <link rel="stylesheet" href="css/style.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+      <nav>
+            <div class="container">
+                  <img src="images/logo.png" class="logo" alt="logo">
+                  <div class="links">
+                        <a href="">Home</a>
+                        <a href="">Support</a>
+                        <a href="">Subscriptions</a>
+                  </div>
+                  <div class="icons">
+                        <i title="search movies" class="ftic fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                        <i title="all notes" style="color: white;" class="ftic fa-solid fa-bookmark notes"></i>
+                        <i id="burger" class="burger ftic fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                  </div>
+            </div>
+            <aside id="aside"></aside>
+      </nav>
+
+      <header>
+
+      </header>
+
+      <script>
+
+            const menuBtn = document.querySelector("#burger");
+            const aside = document.querySelector("#aside");
+
+            menuBtn.addEventListener("click", function() {
+                  aside.classList.toggle("show-menu");
+            });
+      </script>
 </body>
+
 </html>
